@@ -21,6 +21,6 @@ export class Checkout implements OnInit {
   onSubmit() {
     const total = this.cartService.getTotalCost();
     this.cartService.clearCart();
-    this.router.navigate(['/confirmation'], { queryParams: { name: this.name, total: total } });
+    this.router.navigate(['/success'], { queryParams: { name: this.name, total: total } });
   }
 }

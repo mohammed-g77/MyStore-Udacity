@@ -15,6 +15,10 @@ export class ProductItem {
 
   constructor() { }
 
+  updateQuantity(newQuantity: number) {
+    this.quantity = newQuantity;
+  }
+
   addToCart() {
     this.addedToCart.emit({ product: this.product, quantity: this.quantity });
   }

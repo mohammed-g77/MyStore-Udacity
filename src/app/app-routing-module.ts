@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'products/:id', component: ProductDetails },
   { path: 'cart', component: Cart },
   { path: 'checkout', component: Checkout },
-  { path: 'confirmation', component: Confirmation },
+  { path: 'success', component: Confirmation },
   { path: '**', redirectTo: '/' }
 ];
 

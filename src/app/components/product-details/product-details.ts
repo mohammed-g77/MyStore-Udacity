@@ -28,6 +28,10 @@ export class ProductDetails implements OnInit {
     });
   }
 
+  updateQuantity(newQuantity: number) {
+    this.quantity = newQuantity;
+  }
+
   addToCart() {
     if (this.product) {
       this.cartService.addToCart(this.product, this.quantity);

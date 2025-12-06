@@ -13,7 +13,7 @@
                 <p>${{ item.product.price }}</p>
             </div>
             <div class="item-actions">
-                <input type="number" min="0" [ngModel]="item.quantity" (ngModelChange)="updateQuantity(item, $event)">
+                <input type="number" min="0" [(ngModel)]="item.quantity" (ngModelChange)="updateQuantity(item, $event)">
                 <button (click)="removeItem(item)">Remove</button>
             </div>
         </div>
