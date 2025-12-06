@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        <a routerLink="/" class="logo">
+            <span>MyStore</span>
+        </a>
+        <div class="nav-links">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Products</a>
+            <a routerLink="/cart" routerLinkActive="active" class="cart-link">
+                Cart
+                <span class="badge" *ngIf="cartService.getItemCount() > 0">{{ cartService.getItemCount() }}</span>
+            </a>
+        </div>
+    </nav>
+</header>
